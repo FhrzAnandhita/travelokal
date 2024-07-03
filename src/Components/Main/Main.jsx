@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './main.css';
 import img from '../../assets/img (5).jpg';
 import img2 from '../../assets/img (7).jpg';
 import img3 from '../../assets/img (3).jpg';
 import img4 from '../../assets/img (4).jpg';
 import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from "react-icons/hi";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Data = [
     {
@@ -49,15 +51,23 @@ const Data = [
 ];
 
 const Main = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
+
     return (
         <section className="main">
             <div className="secTitle">
-                <h3 className="title">Yang Sering Dikunjungi</h3>
+                <h3 data-aos="fade-right"
+                className="title">Yang Sering Dikunjungi</h3>
             </div>
 
             <div className="secContent grid">
                 {Data.map(({ id, imgsrc, destTitle, location, grade, fees, description }) => (
-                    <div key={id} className="singleDestination">
+                    <div key={id} 
+                    data-aos="fade-up"
+                    className="singleDestination">
                         <div className="imageDiv">
                             <img src={imgsrc} alt={destTitle} />
                         </div>

@@ -43,16 +43,16 @@
     }
   
     .secContent {
-      width: 100%;
-      height: max-content;
-      padding: 2rem auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      margin: auto;
-      row-gap: 2rem;
-      z-index: 100;
+        width: 100%;
+        height: max-content;
+        padding: 2rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        row-gap: 2rem;
+        z-index: 100;
   
         .contactDiv {
             display: flex;
@@ -60,54 +60,165 @@
             flex-direction: column;
             gap: 1rem;
     
-        .text {
-            small {
-                font-size: 13px;
-                font-weight: 400;
-                color: var(--whiteColor);
-            }
-  
-            h2 {
-            color: var(--whiteColor);
-            font-size: 1.8rem;
-            }
-        }
-  
-        .inputDiv {
-            display: flex;
-            width: 100%;
-            gap: 1rem;
-            flex-direction: column;
+            .text {
+                small {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: var(--whiteColor);
+                }
     
-            input {
-                width: 100%;
-                padding: 0.5rem 0.6rem;
-                border-radius: 3rem;
-                border: 1px solid var(--whiteColor);
-                outline: none;
-                background: transparent;
+                h2 {
                 color: var(--whiteColor);
-    
-            &::placeholder {
-                color: var(--whiteColor);
-                opacity: 0.5;
+                font-size: 1.8rem;
                 }
             }
   
-        .btn {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            color: var(--whiteColor);
-            font-weight: 500;
-            gap: 0.5rem;
-  
-            .icon {
-              font-size: 18px;
+            .inputDiv {
+                display: flex;
+                width: 100%;
+                gap: 1rem;
+                flex-direction: column;
+        
+                input {
+                    width: 100%;
+                    padding: 0.5rem 0.6rem;
+                    border-radius: 3rem;
+                    border: 1px solid var(--whiteColor);
+                    outline: none;
+                    background: transparent;
+                    color: var(--whiteColor);
+        
+                &::placeholder {
+                    color: var(--whiteColor);
+                    opacity: 0.5;
+                    }
+                }
+    
+                .btn {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    color: var(--whiteColor);
+                    font-weight: 500;
+                    gap: 0.5rem;
+        
+                    .icon {
+                    font-size: 18px;
+                    }
+                }
             }
         }
+
+        .footerCard{
+            position: relative;
+            padding: 1rem 1rem 4rem;
+            gap: 1rem;
+            border-radius: 1rem;
+            background: var(--bodyColor);
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow: hidden;
+
+            .footerIntro{
+                flex-basis: 50%;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                row-gap: .5rem;
+            }
+
+            .logoDiv{
+                .logo{
+                    color:var(--blackColor);
+                    font-weight: 600;
+                    
+                    .icon{
+                        font-size: 25px;
+                        color:var(--PrimaryColor);
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .footerParagraph{
+                font-size: 13px;
+                color:var(--textColor);
+            }
+
+            .footerSpecial{
+                column-gap: .5rem;
+
+                .icon{
+                    color: var(--blackColor);
+                    font-size: 20px;
+
+                    &:hover{
+                        color: var(--PrimaryColor);
+                    }
+                }
+            }
+
+            .footerLinks{
+                flex-basis: 50%;
+                width: 100%;
+                gap: 10px;
+                grid-template-columns: repeat(2,1fr);
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: row;
+
+                .linkGroup{
+                    .groupTitle{
+                        color: var(--blackColor);
+                        font-weight: 600;
+                        display: block;
+                        margin-bottom: .5rem;
+                    }
+
+                    .footerList{
+                        font-size: 15px;
+                        color: var(--textColor);
+                        position: relative;
+                        transition: all .3s ease-in-out;
+                        cursor: pointer;
+                        column-gap: .5rem;
+
+                        .icon{
+                            font-size: 18px;
+                            color: var(--greyText);
+                        }
+
+                        &:hover{
+                            transform: translateX(7px);
+                            color: var(--PrimaryColor);
+                        
+                            .icon{
+                                color: var(--SecondaryColor);
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+
+            .footerDiv{
+                flex-direction: column;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: var(--SecondaryColor);
+                padding: 0.5rem 2rem;
+                
+                small{
+                    color: var(--whiteColor);
+                    font-size: 10px;
+                }
+            }
         }
-      }
     }
 }
   
