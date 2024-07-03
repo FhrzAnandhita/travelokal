@@ -165,3 +165,77 @@
         }
     }
 }
+
+
+@media screen and (min-width: 768px) {
+    .home {
+        .homeContent {
+            .textDiv {
+                .smallText {
+                    font-size: 2.3rem;
+                }
+
+                .homeTitle {
+                    font-size: 3rem;
+                    position: relative;
+                    width: max-content;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        background: var(--SecondaryColor);
+                        height: 5px;
+                        width: 150px;
+                        bottom: 5px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+
+            .cardDiv {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .home {
+        height: 70vh;
+
+        .homeContent {
+            .cardDiv {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .home {
+        height: 80vh;
+
+        .homeContent {
+            padding-left: 0;
+            padding-right: 0;
+
+            .cardDiv {
+                padding: 2rem 1rem;
+                grid-template-columns: repeat(3, 1fr);
+
+                .input {
+                    margin-bottom: 1rem;
+                }
+
+                .searchOptions {
+                    bottom: -1rem;
+                    padding: 8px 1rem;
+
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
