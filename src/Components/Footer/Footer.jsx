@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className="contactDiv flex">
                     <div data-aos="fade-up" className="text">
                         <small>Keep in touch</small>
-                        <h2>Travel with your family and your girlfriend</h2>
+                        <h2>Travel with your family</h2>
                     </div>
 
                     <div className="inputDiv flex">
@@ -44,13 +44,20 @@ const Footer = () => {
                         <div className="logoDiv">
                             <a href="#" className="logo flex">
                                 <MdOutlineTravelExplore className="icon" />
-                                Travelokal
+                                Jateng Travel
                             </a>
                         </div>
 
                         <div data-aos="fade-up"
                         className="footerParagraph">
-                            Paragraf 1......... Paragraf 2......... Paragraf 3......... Paragraf 4......... Paragraf 5.........
+                            Travelokala adalah aplikasi memesan tiket untuk melakukan perjalanan ketempat liburan,
+                            khususnya di Indonesia.
+                            <br />
+                            Travelokala dibangun dengan tujuan untuk mempermudah para wisatawan 
+                            yang ingin menikmati liburan di Indonesia.
+                            <br />
+                            Travelokala dibuat dengan tujuan untuk mempermudah para wisatawan yang ingin menikmati liburan di Indonesia.
+                            <br />
                         </div>
 
                         <div data-aos="fade-up" className="footerSocials">

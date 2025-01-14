@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
 import './main.css';
-import img from '../../assets/img (5).jpg';
-import img2 from '../../assets/img (7).jpg';
-import img3 from '../../assets/img (3).jpg';
-import img4 from '../../assets/img (4).jpg';
+import img from '../../assets/masjidagung.jpg';
+import img2 from '../../assets/lawangsewu.jpg';
+import img3 from '../../assets/dusunsemilir.jpg';
+import img4 from '../../assets/borobudur.jpg';
 import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from "react-icons/hi";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -12,41 +12,41 @@ const Data = [
     {
         id: 1,
         imgsrc: img,
-        destTitle: 'Karimun Jawa',
-        location: 'Location 1',
-        grade: 'Family, Couple',
-        fees: 'Rp.1.500.000',
-        description: 'Desc 1'
+        destTitle: 'Masjid Agung Jawa Tengah',
+        location: 'Semaranng',
+        grade: 'Family, Couple, Realigius',
+        fees: 'Rp.500.000',
+        description: 'Masjid Agung Jawa Tengah, Semarang'
     },
     
     {
         id: 2,
         imgsrc: img2,
-        destTitle: 'Title2',
-        location: 'Location 2',
+        destTitle: 'Lawang Sewu',
+        location: 'Semarang',
         grade: 'Family, Couple',
-        fees: 'Rp.1.500.000',
-        description: 'Desc 2'
+        fees: 'Rp.500.000',
+        description: 'Lawang Sewu Jawa Tengah, Semarang'
     },
 
     {
         id: 3,
         imgsrc: img3,
-        destTitle: 'Title3',
-        location: 'Location 3',
+        destTitle: 'Dusun Semilir',
+        location: 'Kabupaten Semarang',
         grade: 'Family, Couple',
-        fees: 'Rp.1.500.000',
-        description: 'Desc 3'
+        fees: 'Rp.500.000',
+        description: 'Dusun Semilir, Kabupaten Semarang'
     },
 
     {
         id: 4,
         imgsrc: img4,
-        destTitle: 'Title4',
-        location: 'Location 4',
+        destTitle: 'Candi Borobudur',
+        location: 'Magelang',
         grade: 'Family, Couple',
-        fees: 'Rp.1.500.000',
-        description: 'Desc 4'
+        fees: 'Rp.500.000',
+        description: 'Candi Borobudur, Magelang'
     },
 ];
 
